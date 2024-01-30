@@ -1,0 +1,69 @@
+
+                 *********************************************
+                 *                                           *
+                 *             A I M - S p i c e             *
+                 *                                           *
+                 *         Professional Version 2020.100           *
+                 *                                           *
+                 *********************************************
+
+	Date: Tue Jan 30 23:28:01 2024
+	Circuit File: C:\Users\aryan\OneDrive\Documents\GitHub\vlsi-design\nand-gate\transient\nand-tr.cir
+	Analysis: Transient
+
+**************************  Circuit Description  **************************
+
+     1:  NAND Gate TR
+     2:  M1 4 1 3 3 ptype l=0.25u,w=0.25u
+     3:  M2 4 2 3 3 ptype l=0.25u,w=0.25u
+     4:  M3 4 1 6 6 ntype l=0.25u,w=0.25u
+     5:  M4 6 2 0 0 ntype l=0.25u,w=0.25u
+     6:  .model ntype nmos
+     7:  .model ptype pmos
+     8:  VDD 3 0 DC 5V
+     9:  VIN1 1 0 pulse(0 5V 0 1ns 1ns 2us 4us)
+    10:  VIN2 2 0 DC 5V
+    11:  .tran 0.01 5u
+
+***************************  Model Parameters  ****************************
+
+
+***************  Device Parameters (Only for .op analysis)  ***************
+
+
+
+**************************  Analysis Parameters  **************************
+
+	Stepsize ............ : 0.01
+	Final time .......... : 5u
+	Use Initial Conditions: Off
+
+
+
+**************  Options (Only those different from default)  **************
+
+
+
+*************************  Simulation Statistics  *************************
+
+	Total number of iterations.....................: 230
+	Number of iterations for transient analysis....: 222
+	Total number of timepoints.....................: 97
+	Number of timepoints accepted..................: 97
+	Number of timepoints rejected..................: 0
+	Total analysis time (sec)......................: 0.014
+	Transient analysis time (sec)..................: 0.011
+	Time spent in device loading (sec).............: 0
+	Time spent in L-U decomposition (sec)..........: 0
+	Time spent in matrix reordering (sec)..........: 0
+	Time spent in matrix solving (sec).............: 0
+	Time spent in transient L-U decomposition (sec): 0
+	Time spent in transient matrix solving (sec)...: 0
+
+***************************  Kernel Messages  *****************************
+
+Circuit: NAND Gate TR
+
+Warning: vin1: no DC value, transient time 0 value used
+Warning: vin1: no DC value, transient time 0 value used
+
